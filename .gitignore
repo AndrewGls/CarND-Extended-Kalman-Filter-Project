@@ -6,3 +6,6 @@ build/
 
 # editor config
 .vscode/
+
+ide_profiles/vs/.vs/
+ide_profiles/vs/x64/
