@@ -5,11 +5,11 @@ using Eigen::VectorXd;
 
 void KalmanFilter::Init(VectorXd &x_in, MatrixXd &P_in, MatrixXd &F_in, MatrixXd &Q_in)
 {
-  x_ = x_in;
-  P_ = P_in;
-  F_ = F_in;
-  Q_ = Q_in;
-  I_ = MatrixXd::Identity(P_.rows(), P_.cols());
+	x_ = x_in;
+	P_ = P_in;
+	F_ = F_in;
+	Q_ = Q_in;
+	I_ = MatrixXd::Identity(P_.rows(), P_.cols());
 }
 
 void KalmanFilter::Predict()
@@ -20,7 +20,7 @@ void KalmanFilter::Predict()
 
 void KalmanFilter::Update(const Eigen::VectorXd &z, const Eigen::MatrixXd& H, const Eigen::MatrixXd& R)
 {
-   // Update the state by using Kalman Filter equations.
+	// Update the state by using Kalman Filter equations.
 
 	VectorXd z_pred = H * x_;
 	UpdateWithPredectedMeasurementDiff(z - z_pred, H, R);
