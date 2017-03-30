@@ -56,7 +56,7 @@ public:
 	void UpdateEKF(const Eigen::VectorXd& z, const Eigen::VectorXd& z_pred, const Eigen::MatrixXd& H, const Eigen::MatrixXd& R);
 
 private:
-	inline void UpdateWithPredectedMeasurementDiff(const Eigen::VectorXd& y, const Eigen::MatrixXd& H, const Eigen::MatrixXd& R);
+	void UpdateWithPredectedMeasurementDiff(const Eigen::VectorXd& y, const Eigen::MatrixXd& H, const Eigen::MatrixXd& R);
 };
 
 
