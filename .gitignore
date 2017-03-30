@@ -9,3 +9,4 @@ build/
 
 ide_profiles/vs/.vs/
 ide_profiles/vs/x64/
+ide_profiles/vs/ekf.vcxproj.user
